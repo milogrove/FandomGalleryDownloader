@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FandomGalleryDownloader.AvaloniaGUI.ProgressDialog"
+        Title="Downloading">
+
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+		<TextBlock		Name="TextInfo"				Text="Please wait, downloading..." HorizontalAlignment="Center"/>
+		<ProgressBar	Name="ProgressBar"			Minimum="0" Maximum="100" Width="200" Height="20" Margin="0,10,0,10"/>
+		<TextBlock		Name="ProgressText"			HorizontalAlignment="Center" Margin="0,10,0,10" Text="Images: 0/0"/>
+		<TextBlock		Name="ProgressLinksText"	HorizontalAlignment="Center" Margin="0,10,0,10"/>
+		<Button			Name="CancelButton"			Click="Cancel_Click" HorizontalAlignment="Center" IsVisible="True">Cancel</Button>
+		<Button			Name="ExitButton"			Click="Exit_Click" HorizontalAlignment="Center" IsVisible="False">Exit</Button>
+		<TextBlock		Name="TimeText"				HorizontalAlignment="Center" Margin="0,10,0,10" IsVisible="False"/>
+	</StackPanel>
+	
+	
+</Window>
