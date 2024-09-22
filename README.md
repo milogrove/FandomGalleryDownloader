@@ -1,1 +1,1 @@
-# FandomGalleryDownloader.AvaloniaGUI git
+# Fandom Gallery Downloader
